@@ -78,8 +78,3 @@ A simple Android drawing app that simulates geometry tools with *snappy* interac
 [Watch Demo Video](https://github.com/user-attachments/assets/8469cffb-c402-4091-b4bf-0368ce77baf9)  
 
 ---
-
-## 📥 Download APK
-⬇️ [Download Latest APK (Google Drive)](https://drive.google.com/file/d/14jxX9wt-mGAb4vkuqeL6xwyotD9wGSx-/view?usp=sharing)  
-
----
