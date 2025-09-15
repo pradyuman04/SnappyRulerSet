@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <!-- Drawing surface -->
+    <com.example.snappyrulerset.ui.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:layout_toEndOf="@id/toolbarTools"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/drawing_view_desc" />
+
+    <!-- Vertical floating toolbar on the left -->
+    <include
+        android:id="@+id/toolbarTools"
+        layout="@layout/toolbar_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hudContainer"
+        android:layout_marginStart="8dp"
+        tools:ignore="IncludeLayoutParam" />
+
+    <!-- HUD overlay (top-left) -->
+    <LinearLayout
+        android:id="@+id/hudContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/hud_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/hud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Len: 0.00 cm  Angle: 0°"
+            android:textColor="#111"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Bottom bar with quick actions -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/undo"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/undo"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <ImageButton
+            android:id="@+id/btnRedo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/redo"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/redo"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnExport"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/save"
+            android:contentDescription="@string/export"
+            android:scaleType="centerInside"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+
+
+    <!-- Floating ruler toggle (top-right) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabToggleRuler"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ruler_toggle"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/hudContainer"
+        android:layout_marginEnd="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:contentDescription="@string/toggle_ruler" />
+
+</RelativeLayout>

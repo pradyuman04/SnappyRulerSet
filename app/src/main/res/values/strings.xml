@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SnappyRulerSet</string>
+    <string name="drawing_view_desc" />
+    <string name="tool_pen" />
+    <string name="tool_ruler" />
+    <string name="tool_setsquare" />
+    <string name="tool_protractor" />
+    <string name="tool_compass" />
+    <string name="export" />
+    <string name="toggle_ruler" />
+    <string name="redo" />
+    <string name="undo" />
+</resources>

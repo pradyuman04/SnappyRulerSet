@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@drawable/toolbar_background"
+    android:elevation="6dp">
+
+    <ImageButton
+        android:id="@+id/btnPen"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/pen"
+        android:contentDescription="@string/tool_pen"
+        android:scaleType="centerInside"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageButton
+        android:id="@+id/btnRuler"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ruler"
+        android:contentDescription="@string/tool_ruler"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageButton
+        android:id="@+id/btnSetsq"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/set_square"
+        android:contentDescription="@string/tool_setsquare"
+        android:scaleType="centerInside"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageButton
+        android:id="@+id/btnProtractor"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/protractor"
+        android:contentDescription="@string/tool_protractor"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+
+
+    <ImageButton
+        android:id="@+id/btnCompass"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/compass"
+        android:contentDescription="@string/tool_compass"
+        android:layout_margin="10dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+</LinearLayout>

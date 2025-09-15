@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calibRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    tools:context=".CalibrationActivity">
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place a known-length object horizontally on the screen (e.g., credit card). Touch start and end to calibrate."
+        android:textSize="16sp"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvKnownLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Known length (cm):" />
+
+    <EditText
+        android:id="@+id/etKnown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="e.g. 8.56" />
+
+    <Button
+        android:id="@+id/btnStartCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Calibration" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: idle"
+        android:paddingTop="12dp" />
+
+</LinearLayout>
